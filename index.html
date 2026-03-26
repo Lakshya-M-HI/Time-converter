@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time - Converter</title>
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: rgb(55, 93, 74);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .InputBox {
+            background-color: rgb(203, 203, 203);
+            padding: 50px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+        }
+
+        #time {
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .btn {
+            border: none;
+            padding: 5px 10px;
+            border-radius: 6px;
+            background-color: rgb(15, 134, 94);
+            color: white;
+        }
+
+        /* table {
+            border: 1px solid black;
+        } */
+
+        .info-table {
+            border-collapse: collapse;
+            /* important for spacing */
+            border-spacing: 0px 10px;
+            /* vertical gap */
+            min-width: 350px;
+        }
+
+        .info-table th,
+        .info-table td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .info-table th {
+            background-color: #f0f0f0;
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="InputBox">
+            <div class="text">Enter time in milliseconds</div>
+            <input type="number" id="time">
+            <button class="btn">Convert</button>
+
+            <div class="result">
+                <table class="info-table">
+                    <tr>
+                        <th>ISO</th>
+                        <td class="ISO">--</td>
+                    </tr>
+                    <tr>
+                        <th>UTC</th>
+                        <td class="UTC">--</td>
+                    </tr>
+                    <tr>
+                        <th>Your Time zone</th>
+                        <td class="Local">--</td>
+                    </tr>
+                    <tr>
+                        <th>Years</th>
+                        <td class="yearsAgo">--</td>
+                    </tr>
+                    <tr>
+                        <th>Seconds</th>
+                        <td class="secondsAgo">--</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
